@@ -1,0 +1,74 @@
+:root{
+    --violet--doux : #6C63FF;
+    --violet--fonce : #534edd;
+    --orange--vif : #ffa726;
+    --gris--tres--fonce : #333;
+    --gris--tres--clair : #f8f8f8;
+    --gris--clair : #eee;
+}
+*{
+    margin: 0;/*margin signifie marge exterieur*/
+    padding: 0;/*marge interieur*/
+    box-sizing: border-box;/*cadre*/
+}
+body{
+    background-color: var(--gris--tres--clair);
+    font-family: roboto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+}
+.logo{
+    text-decoration: none;/*enleve le soulignement*/
+    font-size: 2rem;/*taille de la police*/
+    color: var(--violet--doux);
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-left: 25px;
+}
+ul li a {
+    text-decoration: none;/* enleve le soulignement*/
+    color: var(--gris--tres--fonce);
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    color: var(--violet--fonce);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: var(--violet--doux);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after {
+width: 100%;
+}
+
+ul li a.active {
+    color: var(--violet--doux);
+}
+
+ul li a.active::after {
+    width: 100%;
+}
