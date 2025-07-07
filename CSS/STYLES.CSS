@@ -2,6 +2,7 @@
     --violet--doux : #6C63FF;
     --violet--fonce : #534edd;
     --orange--vif : #ffa726;
+    --gris--fonce: #666;
     --gris--tres--fonce : #333;
     --gris--tres--clair : #f8f8f8;
     --gris--clair : #eee;
@@ -22,6 +23,10 @@ header{
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 .logo{
     text-decoration: none;/*enleve le soulignement*/
@@ -71,4 +76,87 @@ ul li a.active {
 
 ul li a.active::after {
     width: 100%;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+
+}
+
+.hero-section img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet--doux);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: var(--violet--fonce);
+
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    color: var(--gris--fonce);
+    margin-bottom: 1.2rem;
+}
+
+.hero-section a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet--doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.hero-section a:hover {
+    background-color: var(--violet--fonce);
+    transform: translateY(-3px);
+}
+
+.apropos-section {
+    text-align: center;
+    width: 800px;
+    margin: 6rem auto;
+
+}
+
+.apropos-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--violet--doux);
+    position: relative;
+}
+
+.apropos-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet--doux);
+    margin: 1.5rem auto;
+    border-radius: 2px;
+
+}
+
+.apropos-section p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: var(--gris--fonce);
+    margin-bottom: 2rem;
 }
