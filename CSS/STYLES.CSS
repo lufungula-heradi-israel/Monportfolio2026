@@ -1,9 +1,9 @@
-:root{
-    --violet--doux : #6C63FF;
-    --violet--fonce : #534edd;
+:root {
+    --violet--doux : #6c63ff;
+    --violet--fonce:  #534edd;
     --orange--vif : #ffa726;
-    --gris--fonce: #666;
-    --gris--tres--fonce : #333;
+    --gris--fonce :#666;
+    --gris--tres-fonce : #333;
     --gris--tres--clair : #f8f8f8;
     --gris--clair : #eee;
 }
@@ -14,9 +14,9 @@
 }
 body{
     background-color: var(--gris--tres--clair);
-    font-family: roboto;
+    font-family: roboto, sans-serif;
 }
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +29,12 @@ header{
     z-index: 1000;
 }
 .logo{
-    text-decoration: none;/*enleve le soulignement*/
-    font-size: 2rem;/*taille de la police*/
+    text-decoration: none; /*enlève le soulignement*/
+    font-size: 2rem; /*taille de la police*/
     color: var(--violet--doux);
     font-weight: bold;
 }
-ul{
+ul {
     list-style: none;
     display: flex;
 }
@@ -42,11 +42,12 @@ ul{
 ul li {
     margin-left: 25px;
 }
+
 ul li a {
-    text-decoration: none;/* enleve le soulignement*/
-    color: var(--gris--tres--fonce);
-    font-weight: bold;
-    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--gris--tres-fonce);
+    font-weight: 600;
+    font-size: 1.1em;
     position: relative;
     padding: 10px 0;
 }
@@ -64,52 +65,44 @@ ul li a::after {
     height: 2.5px;
     background-color: var(--violet--doux);
     transition: width 0.3s ease;
-}
 
+}
 ul li a:hover::after {
-width: 100%;
+    width: 100%;
 }
-
 ul li a.active {
     color: var(--violet--doux);
 }
-
 ul li a.active::after {
     width: 100%;
 }
-
-.hero-section{
+.hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     text-align: center;
     margin: 10rem 2rem;
-
 }
-
-.hero-section img{
+.hero-section img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid var(--violet--doux);
 }
-
 .hero-section h1 {
     font-size: 4rem;
     margin-bottom: 1.2rem;
     font-weight: bold;
     color: var(--violet--fonce);
-
 }
-
 .hero-section p {
     font-size: 1.3em;
     color: var(--gris--fonce);
     margin-bottom: 1.2rem;
+    
 }
-
 .hero-section a {
     text-decoration: none;
     display: inline-block;
@@ -121,29 +114,26 @@ ul li a.active::after {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 1rem;
 }
-
 .hero-section a:hover {
     background-color: var(--violet--fonce);
     transform: translateY(-3px);
 }
-
 .apropos-section {
     text-align: center;
     width: 800px;
     margin: 6rem auto;
-
 }
 
-.apropos-section h2 {
+section h2 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--violet--doux);
     position: relative;
+    text-align: center;
 }
 
-.apropos-section h2::after {
+section h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -151,12 +141,74 @@ ul li a.active::after {
     background-color: var(--violet--doux);
     margin: 1.5rem auto;
     border-radius: 2px;
-
 }
-
 .apropos-section p {
     line-height: 1.6;
     font-size: 1.2em;
     color: var(--gris--fonce);
     margin-bottom: 2rem;
+}
+.competences-section {
+    margin-top: 3rem;
+}
+.competences-section table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0.5px 15px rgba(0, 0, 0, 0.00);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.competences-section table th,
+.competences-section table td {
+    padding: 15px;
+}
+.competences-section thead tr {
+    background-color: var(--violet--doux);
+    color: white;
+}
+.competences-section table td {
+    border-bottom: 1px solid var(--gris--clair);
+}
+.competences-section tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+.competences-section tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.competences-section tbody tr:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: var(--violet--fonce);
+    color: #ffff;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    text-align: center;
+
+}
+footer a {
+    font-size: 1.0rem;
+    display: inline-block;
+    color: #ffff;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.Social-section img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 0;
+    
+}
+
+footer a:hover {
+    display: inline-block;
+    color: var(--orange--vif);
+    transform: translateY( -3px);
 }
