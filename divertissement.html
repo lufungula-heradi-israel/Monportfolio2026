@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Mon Portfolio - Divertissement</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header>
@@ -19,20 +16,98 @@
     <ul>
         <li><a href="index.html">accueil</a></li>
         <li><a href="projet.html">projet</a></li>
-        <li><a href="passion.html">passion</a></li>
+        <li><a href="passion.html"c>passion</a></li>
         <li><a href="divertissement.html"class="active">divertissement</a></li>
         <li><a href="Contact.html">Contact</a></li>
     </ul>
 </nav>
 </header>
-<h1> Voici mes divertissements</h1>
-<footer>
+<main class="container">
+        <section class="hero-section">
+            <h1>Ma Sélection Divertissement</h1>
+            <div class="underline"></div>
+        </section>
 
-<p>@ 2026. Tous droits réserveés</p>
-<div>
-    <a href=""><i class="fa-brands fa-github"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-</div>
-</footer>
+        <div class="grid-divertissement">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=500" alt="Cinéma">
+                </div>
+                <div class="card-content">
+                    <h3>Dune: Part Two (Film)</h3>
+                    <p>Une épopée de science-fiction visuellement époustouflante par Denis Villeneuve, aux thèmes profonds.</p>
+                    <div class="tags">
+                        <span class="tag">#Cinéphile</span>
+                        <span class="tag">#SF</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-popcorn"></i> Bande-annonce</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=500" alt="Musique">
+                </div>
+                <div class="card-content">
+                    <h3>Playlist Electronica 2024</h3>
+                    <p>Une compilation pour se concentrer, s'évader ou coder, avec des rythmes ambient et techno.</p>
+                    <div class="tags">
+                        <span class="tag">#Musique</span>
+                        <span class="tag">#Ambient</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-headphones"></i> Écouter</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=500" alt="Gaming">
+                </div>
+                <div class="card-content">
+                    <h3>Hades II (Jeu Vidéo)</h3>
+                    <p>Un rogue-like dungeon crawler addictif avec une narration et une direction artistique uniques.</p>
+                    <div class="tags">
+                        <span class="tag">#Gaming</span>
+                        <span class="tag">#Action</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-gamepad"></i> Jouer</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=500" alt="Série">
+                </div>
+                <div class="card-content">
+                    <h3>Succession (Série)</h3>
+                    <p>Une satire acérée de la dynamique familiale et du pouvoir au sein d'un empire médiatique.</p>
+                    <div class="tags">
+                        <span class="tag">#Série</span>
+                        <span class="tag">#Drame</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-play"></i> Regarder</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Voici une sélection de mes films, musiques et jeux préférés.</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <p class="copyright">© 2026 Mario. Tous droits réservés.</p>
+    </footer>
+
+</body>
 </html>

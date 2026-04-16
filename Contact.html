@@ -7,34 +7,74 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-<div>
-    <a href="">Mon portfolio</a>
-</div>
-<nav>
-    <ul>
-        <li><a href="index.html">accueil</a></li>
-        <li><a href="projet.html">projet</a></li>
-        <li><a href="passion.html">passion</a></li>
-        <li><a href="divertissement.html">divertissement</a></li>
-        <li><a href="Contact.html"class="active">Contact</a></li>
-    </ul>
-</nav>
-</header>
-<main>
-    <h1>voici mes projets</h1>
-</main>
-<footer>
+    <div>
+        <a href="index.html">Mon portfolio</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="projet.html">projet</a></li>
+            <li><a href="passion.html">passion</a></li>
+            <li><a href="divertissement.html">divertissement</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header><main class="container">
+    <section class="hero-section">
+        <h2>Contactez-moi</h2>
+        <p>Une question ou un projet ? N'hésitez pas à m'envoyer un message !</p>
+    </section>
 
-<p>@ 2026. Tous droits réserveés</p>
-<div>
-    <a href=""><i class="fa-brands fa-github"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-</div>
+    <div class="contact-container">
+        <div class="contact-content">
+            
+            <div class="contact-info">
+                <h3>Mes coordonnées</h3>
+                <p><i class="fa-solid fa-envelope"></i> mario@exemple.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</p>
+                
+                <div class="social-apps">
+                    <a href="#" class="app-link whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="#" class="app-link telegram">
+                        <i class="fa-brands fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom...">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Votre message ici..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>@ 2026. Tous droits réservés</p>
+    <div class="social-icons">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
 </footer>
-</html>
+
+</body> </html>
